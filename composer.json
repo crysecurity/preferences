@@ -1,0 +1,60 @@
+{
+    "name": "cr4sec/preferences",
+    "description": "A package for the Laravel framework implementing a custom preference system",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "php",
+        "preferences",
+        "settings",
+        "package"
+    ],
+    "support": {
+        "issues": "https://github.com/crysecurity/prefernces/issues",
+        "source": "https://github.com/crysecurity/prefernces"
+    },
+    "homepage": "https://github.com/crysecurity/prefernces",
+    "authors": [
+        {
+            "name": "Dubinskii Artem",
+            "email": "cr4sec@gmail.com",
+            "homepage": "https://github.com/crysecurity",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/console": "^8.0",
+        "illuminate/database": "^6.0|^7.0|^8.0",
+        "illuminate/http": "^8.0",
+        "illuminate/routing": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cr4sec\\Preferences\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cr4sec\\Preferences\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cr4sec\\Preferences\\PreferencesServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}
